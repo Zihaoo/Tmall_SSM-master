@@ -18,7 +18,12 @@
 --
 -- Table structure for table `category`
 --
+-- 商城DDL
+DROP DATABASE IF EXISTS tmall_ssm;
+CREATE DATABASE tmall_ssm DEFAULT CHARACTER SET utf8;
+USE `tmall_ssm`;
 
+-- 分类
 DROP TABLE IF EXISTS `category`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -69,15 +74,6 @@ CREATE TABLE `order_` (
 ) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `order_`
---
-
-LOCK TABLES `order_` WRITE;
-/*!40000 ALTER TABLE `order_` DISABLE KEYS */;
-INSERT INTO `order_` VALUES (1,'123456','地球村','','我没有三颗心脏','','','1996-11-30 00:00:00','2018-04-29 00:00:00','2018-04-29 00:00:00','2018-04-29 00:00:00',1,'delete'),(10,'20180506143826504','123123','','我没有三颗心脏','12345678910','','2018-05-06 00:00:00','2018-05-06 00:00:00',NULL,NULL,1,'delete'),(11,'20180507092435428','详细地址','','我没有三颗心脏','12345678910','卖家留言','2018-05-07 00:00:00','2018-05-07 00:00:00',NULL,NULL,1,'finish'),(12,'20180507180327444','123','','我没有三颗心脏','12345678910','','2018-05-07 00:00:00','2018-05-07 00:00:00','2018-05-07 00:00:00','2018-05-07 00:00:00',1,'finish'),(13,'20180507205110309','','','','','','2018-05-07 00:00:00','2018-05-07 00:00:00','2018-07-11 14:54:30',NULL,1,'waitConfirm'),(14,'20180710172724138','','','','','','2018-07-10 00:00:00',NULL,NULL,NULL,3,'delete'),(15,'20180710173121357','','','','','','2018-07-10 00:00:00',NULL,NULL,NULL,3,'delete'),(16,'20180711102602757','','','','','','2018-07-11 00:00:00',NULL,NULL,NULL,3,'delete'),(17,'20180711103416758','','','','','','2018-07-11 00:00:00',NULL,NULL,NULL,3,'delete'),(18,'20180711103441638','','','','','','2018-07-11 00:00:00',NULL,NULL,NULL,3,'delete'),(19,'20180711104600419','','','','','','2018-07-11 00:00:00','2018-07-11 00:00:00','2018-07-11 00:00:00','2018-07-11 00:00:00',3,'finish'),(20,'20180711161857130','林科大','410000','杨宏伟','123456','','2018-07-11 00:00:00','2018-07-11 16:19:09',NULL,NULL,1,'waitDelivery'),(21,'20180711162308708','林科大','410000','杨宏伟','1234556','','2018-07-11 00:00:00','2018-07-11 00:00:00','2018-07-11 16:23:36',NULL,1,'waitConfirm'),(22,'20180711231028834','林科大','410000','杨宏伟','123456','','2018-07-11 00:00:00','2018-07-11 00:00:00','2018-07-11 23:11:18',NULL,3,'waitConfirm');
-/*!40000 ALTER TABLE `order_` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `order_item`
@@ -102,15 +98,8 @@ CREATE TABLE `order_item` (
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `order_item`
---
 
-LOCK TABLES `order_item` WRITE;
-/*!40000 ALTER TABLE `order_item` DISABLE KEYS */;
-INSERT INTO `order_item` VALUES (14,5,11,1,1),(15,6,11,1,1),(16,4,NULL,1,5),(17,4,12,1,1),(18,8,13,1,1),(19,5,14,3,1),(20,4,15,3,1),(21,22,NULL,3,1),(22,21,16,3,4),(23,22,17,3,1),(24,21,18,3,1),(25,21,NULL,3,1),(26,21,19,3,1),(27,26,20,1,1),(28,22,21,1,2),(29,22,NULL,1,1),(30,25,22,3,1);
-/*!40000 ALTER TABLE `order_item` ENABLE KEYS */;
-UNLOCK TABLES;
+
 
 --
 -- Table structure for table `product`
@@ -139,7 +128,12 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (4,'男装 袋装圆领T恤(短袖) 404133 优衣库UNIQLO','初上市价格39元',39,107769,9999,1),(5,'复古连衣裙2018春夏新款女装休闲宽松韩版气质圆领中袖丝麻连衣裙','丝麻面料 做工精细 气质优雅',368,1148,9999,1),(6,'【满400减40】ONLY夏新喇叭长袖高腰碎花连衣裙女|117207510','纯色内衬 镂空设计7天降退差价',224.5,946,9999,1),(7,'夏季2018新款短袖男士t恤韩版宽松ulzzang百搭潮流半袖七分袖上衣','2件装79元！收藏加购优先发货！',79,9543,9999,1),(8,'唐狮春秋季牛仔外套男牛仔衣夹克韩版潮流修身帅气情侣装男生外套','潮流多色，热卖上万件',169,4909,9999,1),(21,'苏晨阳的内裤','',9.9,NULL,NULL,1),(22,'杨宏伟肖像','万人抢购',99999,9999,1,2),(23,'Air Jordan 1乔 1黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎','全场正品 达人推荐 无忧退换',1499.99,1000,1000,3),(24,'耐克 NIKE AIR MAX 97 SE PULL TAB 白蓝串标子弹鞋AQ4126-400','我好像要一双!!!!',1999.99,1000,1000,3),(25,'stussy卫衣男supreme外套欧美bape斯图西潮牌情侣装superme','好看,我想要!!!',2000.99,1000,1000,2),(26,'李宁男装T恤中国纽约时装周短袖汉字时尚限量透气运动衫AHSN645','万人抢购',499.99,1000,1000,2);
+INSERT INTO `product` VALUES
+(22,'杨宏伟肖像','万人抢购',99999,9999,1,2),
+(23,'Air Jordan 1乔 1黑红脚趾小闪电黑灰绿黄蓝月六冠王扣碎','全场正品 达人推荐 无忧退换',1499.99,1000,1000,3),
+(24,'耐克 NIKE AIR MAX 97 SE PULL TAB 白蓝串标子弹鞋AQ4126-400','我好像要一双!!!!',1999.99,1000,1000,3),
+(25,'stussy卫衣男supreme外套欧美bape斯图西潮牌情侣装superme','好看,我想要!!!',2000.99,1000,1000,2),
+(26,'李宁男装T恤中国纽约时装周短袖汉字时尚限量透气运动衫AHSN645','万人抢购',499.99,1000,1000,2);
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -271,15 +265,6 @@ CREATE TABLE `review` (
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `review`
---
-
-LOCK TABLES `review` WRITE;
-/*!40000 ALTER TABLE `review` DISABLE KEYS */;
-INSERT INTO `review` VALUES (2,'这款短袖T恤不错哦，没想到买的号码挺准。上身效果好看，特别时尚休闲。和图片上的一样，没色差，衣服料子很好，没线头，布料是棉的，摸起来舒服，比想象的要厚实。朋友们都说好看，款式简洁大方。真的是超级赞，以后就认准这家啦，有想买的亲赶快下手哦。我是这的老顾客了，这家产品确实一直棒棒的哦。',1,4,'2018-05-02 10:24:02'),(3,'比较轻薄，质量蛮好的，穿起来还是比较舒适，很合身，价格也实惠！',1,4,'2018-05-02 10:42:07'),(6,'上身效果很好',3,6,'2018-05-07 10:49:09'),(7,'评价一个',1,6,'2018-05-07 11:01:06'),(8,'qw54e5qwe4qw6eq4eqewq',1,4,'2018-05-07 18:05:09'),(9,'当评价完成之后，可以看到其他用户的评价信息',1,4,'2018-05-07 20:59:49'),(10,'质量很好',3,21,'2018-07-11 14:55:53');
-/*!40000 ALTER TABLE `review` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `user`

@@ -44,12 +44,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- spring版本号 -->
-        <spring.version>4.3.18</spring.version>
+        <spring.version>4.3.18.RELEASE</spring.version>
         <!-- mybatis版本号 -->
         <mybatis.version>3.4.1</mybatis.version>
     </properties>
 
     <dependencies>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-core</artifactId>-->
+            <!--<version>4.3.18.RELEASE</version>-->
+        <!--</dependency>-->
+
         <!-- 上传文件fileupload -->
         <dependency>
             <groupId>commons-fileupload</groupId>

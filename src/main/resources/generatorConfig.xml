@@ -14,7 +14,7 @@
 
         <!-- 数据库连接信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost/tmall_ssm"
-                        userId="root" password="123456">
+                        userId="xxxx" password="xxxx">
         </jdbcConnection>
 
         <!-- 默认 false，把 JDBC DECIMAL 和 NUMERIC 类型解析为 Integer
@@ -114,13 +114,13 @@
             <!--<generatedKey column="id" sqlStatement="JDBC"/>-->
         <!--</table>-->
 
-        <table tableName="order_item" domainObjectName="OrderItem" enableCountByExample="false"
-               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true"
-               selectByExampleQueryId="false">
-            <property name="my.isgen.usekeys" value="true"/>
-            <property name="useActualColumnNames" value="true"/>
-            <generatedKey column="id" sqlStatement="JDBC"/>
-        </table>
+        <!--<table tableName="order_item" domainObjectName="OrderItem" enableCountByExample="false"-->
+               <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="false">-->
+            <!--<property name="my.isgen.usekeys" value="true"/>-->
+            <!--<property name="useActualColumnNames" value="true"/>-->
+            <!--<generatedKey column="id" sqlStatement="JDBC"/>-->
+        <!--</table>-->
 
         <!--<table tableName="referal_link" domainObjectName="ReferalLink" enableCountByExample="false"-->
                <!--enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true"-->

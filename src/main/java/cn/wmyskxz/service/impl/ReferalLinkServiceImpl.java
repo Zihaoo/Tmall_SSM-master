@@ -1,8 +1,9 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.ReferalLinkMapper;
 import cn.wmyskxz.pojo.ReferalLink;
 import cn.wmyskxz.pojo.ReferalLinkExample;
+import cn.wmyskxz.service.ReferalLinkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +11,6 @@ import java.util.List;
 
 /**
  * ReferalLinkService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-04-29-上午 10:48
  */
 @Service
 public class ReferalLinkServiceImpl implements ReferalLinkService {

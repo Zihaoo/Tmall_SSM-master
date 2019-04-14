@@ -1,7 +1,12 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.PropertyValueMapper;
-import cn.wmyskxz.pojo.*;
+import cn.wmyskxz.pojo.Property;
+import cn.wmyskxz.pojo.PropertyValue;
+import cn.wmyskxz.pojo.PropertyValueExample;
+import cn.wmyskxz.service.ProductService;
+import cn.wmyskxz.service.PropertyService;
+import cn.wmyskxz.service.PropertyValueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +15,6 @@ import java.util.List;
 
 /**
  * cn.wmyskxz.pojo.PropertyValueValueService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-04-28-上午 7:47
  */
 @Service
 public class PropertyValueServiceImpl implements PropertyValueService {

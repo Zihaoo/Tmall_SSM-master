@@ -1,8 +1,9 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.PropertyMapper;
 import cn.wmyskxz.pojo.Property;
 import cn.wmyskxz.pojo.PropertyExample;
+import cn.wmyskxz.service.PropertyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +11,6 @@ import java.util.List;
 
 /**
  * PropertyService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-04-27-下午 19:07
  */
 @Service
 public class PropertyServiceImpl implements PropertyService {

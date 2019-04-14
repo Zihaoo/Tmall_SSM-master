@@ -1,8 +1,9 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.UserMapper;
 import cn.wmyskxz.pojo.User;
 import cn.wmyskxz.pojo.UserExample;
+import cn.wmyskxz.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +11,6 @@ import java.util.List;
 
 /**
  * UserService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-04-29-上午 9:47
  */
 @Service
 public class UserServiceImpl implements UserService {

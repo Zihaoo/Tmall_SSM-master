@@ -1,9 +1,11 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.OrderMapper;
 import cn.wmyskxz.pojo.Order;
 import cn.wmyskxz.pojo.OrderExample;
 import cn.wmyskxz.pojo.OrderItem;
+import cn.wmyskxz.service.OrderItemService;
+import cn.wmyskxz.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -13,9 +15,6 @@ import java.util.List;
 
 /**
  * OrderService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-04-29-上午 10:19
  */
 @Service
 public class OrderServiceImpl implements OrderService {

@@ -1,9 +1,11 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.ReviewMapper;
 import cn.wmyskxz.pojo.Review;
 import cn.wmyskxz.pojo.ReviewExample;
 import cn.wmyskxz.pojo.User;
+import cn.wmyskxz.service.ReviewService;
+import cn.wmyskxz.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +13,6 @@ import java.util.List;
 
 /**
  * ReviewService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-05-02-上午 7:51
  */
 @Service
 public class ReviewServiceImpl implements ReviewService {

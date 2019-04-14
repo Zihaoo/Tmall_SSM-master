@@ -1,9 +1,11 @@
-package cn.wmyskxz.service;
+package cn.wmyskxz.service.impl;
 
 import cn.wmyskxz.mapper.ProductMapper;
 import cn.wmyskxz.pojo.Category;
 import cn.wmyskxz.pojo.Product;
 import cn.wmyskxz.pojo.ProductExample;
+import cn.wmyskxz.service.ProductService;
+import cn.wmyskxz.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +14,6 @@ import java.util.List;
 
 /**
  * ProductService 实现类
- *
- * @author: @我没有三颗心脏
- * @create: 2018-04-27-下午 20:16
  */
 @Service
 public class ProductServiceImpl implements ProductService {

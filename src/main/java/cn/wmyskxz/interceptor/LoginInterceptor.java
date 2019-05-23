@@ -33,7 +33,9 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
 	 * @throws Exception
 	 */
 	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+	public boolean preHandle(HttpServletRequest request, 
+				 HttpServletResponse response, 
+				 Object handler) throws Exception {
 
 		HttpSession session = request.getSession();
 		String[] noNeedAuthPage = new String[]{
